@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'tao2-truck-num-forecast'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_68927D5AEDB24C7DB66D724D465BA10F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C010EC1708AE49D3A2BC692DE67F0420 }}
