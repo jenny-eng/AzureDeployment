@@ -14,5 +14,5 @@ tpot>=0.11.0
 seaborn==0.9.0
 cloudpickle>=0.6.0
 scikit-learn
-joblib==0.14.0
 lightgbm
+joblib==0.14.0
