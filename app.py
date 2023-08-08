@@ -15,14 +15,16 @@ def home():
 
 @app.route('/predict',methods = ['POST'])
 def predict():
-    #int_features = [float(x) for x in request.form.values()]
-    int_features = request.form.values().split(",")
+    int_features = [float(x) for x in request.form.values()]
+    #int_features = request.form.values().split(",")
     final_features = [np.array(int_features)]
-    prediction = model.predict(final_features)
-    print(math.floor(prediction[0]))
+    #prediction = model.predict(final_features)
+    prediction = np.sum(final_features)
+    #print(math.floor(prediction[0]))
 
     #output = round(prediction[0], 2)
-    return render_template('home.html', prediction_text="Predictd Truck Number is {}".format(math.floor(prediction[0])))
+    #return render_template('home.html', prediction_text="Predictd Truck Number is {}".format(math.floor(prediction[0])))
+    return render_template('home.html', prediction_text="Predictd Truck Number is {}".format(prediction))
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
