@@ -15,4 +15,6 @@ seaborn==0.9.0
 cloudpickle>=0.6.0
 scikit-learn
 lightgbm
+curl
+libgomp1
 joblib==0.14.0
