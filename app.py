@@ -17,7 +17,7 @@ def home():
 def predict():
     #int_features = [float(x) for x in request.form.values()]
     #int_features = [int(x) for x in request.form.values()]
-    int_features = request.form.values().split(",")
+    int_features = request.form.values()
     #final_features = [int(x) for x in int_features]
     #final_features = [np.array(int_features)]
     #prediction = model.predict(final_features)
