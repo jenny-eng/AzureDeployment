@@ -25,7 +25,7 @@ def predict():
     #print(math.floor(prediction[0]))
 
     #output = round(prediction[0], 2)
-    return render_template('home.html', prediction_text="Predictd Truck Number is {}".format(math.floor(prediction)))
+    return render_template('home.html', prediction_text="Predictd Truck Number is {}".format(math.floor(prediction[0])))
     #return render_template('home.html', prediction_text="Predictd Truck Number is {}".format(mid_features))
 
 @app.route('/predict_api',methods=['POST'])
