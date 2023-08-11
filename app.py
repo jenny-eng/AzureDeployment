@@ -20,7 +20,7 @@ def predict():
     #int_features = request.form.values()
     #final_features = [int(x) for x in int_features]
     final_features = [np.array(mid_features)]
-    prediction = model.predict(final_features)
+    #prediction = model.predict(final_features)
     #prediction = np.sum(final_features)
     #print(math.floor(prediction[0]))
 
@@ -28,7 +28,6 @@ def predict():
     #return render_template('home.html', prediction_text="Predictd Truck Number is {}".format(math.floor(prediction[0])))
     return render_template('home.html', prediction_text="Predictd Truck Number is {}".format(final_features))
     
-
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
     '''
